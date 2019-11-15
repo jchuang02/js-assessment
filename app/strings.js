@@ -36,10 +36,8 @@ stringsAnswers = {
    * @returns {String} The original string of text str reversed.
    */
   reverseString: function reverseString(str) {
-    let reversed = '';
-    for (var i = str.length - 1; i >= 0; i--) {
-      reversed += str[i];
-    }
-    return reversed;
+    var arr = str.split('');
+    arr.reverse();
+    return arr.join(''); 
   },
 };
